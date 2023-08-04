@@ -1,0 +1,8 @@
+@font-face {
+  font-family: perp;
+  src: url("display.otf") format("opentype");
+}
+
+* {
+  font-family: perp;
+}
