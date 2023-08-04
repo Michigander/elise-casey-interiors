@@ -8,17 +8,37 @@
   src: url("titleLight.ttf") format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   --elise-black: black;
 
   font-family: title;
   color: var(--elise-black);
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
   justify-content: center;
   border-bottom: solid 1px var(--elise-black);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 1px var(--elise-black);
+}
+
+.footer-item {
+  padding: 1.5rem;
+  cursor: pointer;
 }
 
 .letterhead {
@@ -33,4 +53,16 @@ header {
 
 .letterhead-sub {
   margin-top: 0.25rem;
+}
+
+.gallery {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-img {
+  max-height: 100%;
+  max-width: 100%;
 }
