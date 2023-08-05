@@ -13,7 +13,7 @@
 }
 
 body {
-  --elise-black: black;
+  --elise-black: #998479;
 
   font-family: title;
   color: var(--elise-black);
@@ -31,7 +31,12 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: solid 1px var(--elise-black);
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 .letterhead {
@@ -41,11 +46,25 @@ header {
 }
 
 .letterhead-title {
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.letterhead-a {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.letterhead-b {
+  margin-left: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .letterhead-sub {
   margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  letter-spacing: 0.5rem;
 }
 
 .main {
@@ -73,7 +92,6 @@ header {
 }
 
 .coming-soon-card {
-  border-style: double;
   width: 80vw;
   padding: 6rem 0;
   max-width: 24rem;
