@@ -65,6 +65,33 @@ header {
   width: 100%;
 }
 
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.coming-soon-card {
+  border-style: double;
+  width: 80vw;
+  padding: 6rem 0;
+  max-width: 24rem;
+  border-width: 0.25rem;
+  border-color: var(--elise-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.coming-soon-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -75,4 +102,9 @@ footer {
 
 .footer-item {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

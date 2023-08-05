@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "elise-casey-interiors",
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
